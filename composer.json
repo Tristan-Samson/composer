@@ -1,0 +1,14 @@
+{
+    "name": "tristan/quete",
+    "description": "Quete composer",
+    "authors": [
+        {
+            "name": "Tristan Samson",
+            "email": "samson.tristan.wcs@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
