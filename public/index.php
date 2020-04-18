@@ -2,7 +2,11 @@
 
 require "../vendor/autoload.php";
 
-use App\Wcs\Hello;
+$products = ['banane', 'fraise', 'orange', 'kiwi', 'pomme'];
 
-$Hello = new Hello();
-echo $Hello->talk();
+
+
+
+$loader = new Twig\Loader\FilesystemLoader(__DIR__ . '/../src/View');
+$twig = new Twig\Environment($loader);
+echo $twig->render("index.html.twig", ['products' => $products]);
